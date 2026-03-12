@@ -18,6 +18,9 @@ const setSidebarState = (isOpen) => {
     if (overlay) {
         overlay.classList.toggle("open", isOpen);
     }
+    if (isOpen && window.innerWidth <= 768) {
+        sidebar.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 };
 
 if (toggleButton && sidebar) {
