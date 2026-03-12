@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://magercode.github.io/sitemap.xml
