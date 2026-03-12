@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Komunitas Mandiri Course oleh MagerCode Teams.">
+    <title>Komunitas - Mandiri Course</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../brand.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Komunitas Mandiri Course</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="komunitas.html">Komunitas</a>
+                <a href="math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-users"></i> Community</div>
+                <a class="btn" href="../index.html">Dashboard</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Komunitas</h3>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                <div>
+                    <strong>Channel</strong>
+                    <p>Update materi dan pengumuman penting.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-comments"></i></div>
+                <div>
+                    <strong>Grup Diskusi</strong>
+                    <p>Tempat tanya jawab dan berbagi progress.</p>
+                </div>
+            </div>
+            <div class="nav-group">
+                <h3>Dokumen Inti</h3>
+                <a class="nav-link" href="dokumentasi.html">Dokumentasi <span>Library</span></a>
+                <a class="nav-link" href="matematika.html">Matematika <span>Konsep</span></a>
+                <a class="nav-link" href="coding.html">Coding <span>Best Practice</span></a>
+                <a class="nav-link" href="engineering.html">Software Engineering <span>Blueprint</span></a>
+            </div>
+</aside>
+
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span class="breadcrumbs-sep">/</span>
+                <span>Halaman</span>
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-current" aria-current="page">Komunitas</span>
+            </nav>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-users"></i> Komunitas</div>
+                    <h1>Gabung dan belajar bareng komunitas Mandiri Course.</h1>
+                    <p>Ikuti channel untuk info terbaru dan masuk ke grup diskusi untuk tanya jawab.</p>
+                </div>
+                <div class="grid-3" style="margin-top: 1.5rem;">
+                    <div class="course-card">
+                        <h4>Channel Telegram</h4>
+                        <p>Update materi, roadmap, dan reminder belajar.</p>
+                        <a class="pill" href="https://t.me/xigma98" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> t.me/xigma98</a>
+                    </div>
+                    <div class="course-card">
+                        <h4>Grup Telegram</h4>
+                        <p>Diskusi bareng, tanya jawab, dan sharing progres.</p>
+                        <a class="pill" href="https://t.me/xigmachat" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> t.me/xigmachat</a>
+                    </div>
+                    <div class="course-card">
+                        <h4>Kontak Admin</h4>
+                        <p>Butuh bantuan cepat? Hubungi tim kami via email.</p>
+                        <div class="pill"><i class="fa-solid fa-envelope"></i> contact@rayhex.biz.id</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Etika Komunitas</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> Saling menghargai dan fokus pada solusi.</div>
+                    <div><i class="fa-solid fa-check"></i> Sertakan konteks saat bertanya.</div>
+                    <div><i class="fa-solid fa-check"></i> Hindari spam dan konten promosi.</div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Komunitas Mandiri Course • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

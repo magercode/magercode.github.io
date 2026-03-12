@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MagerCode - Mandiri Course dokumentasi pembelajaran matematika, coding, dan software engineering.">
+    <title>MagerCode - Mandiri Course</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="brand.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Mandiri Course</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="halaman/tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="halaman/komunitas.html">Komunitas</a>
+                <a href="halaman/math-playground.html">Playground</a>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-sparkles"></i> Update mingguan</div>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Langkah" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu Langkah</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Langkah Belajar</h3>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-compass"></i></div>
+                <div>
+                    <strong>Orientasi</strong>
+                    <p>Kenali jalur matematika, coding, dan software engineering.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                <div>
+                    <strong>Dasar Konsep</strong>
+                    <p>Bangun pondasi dengan aljabar, logika, dan algoritma dasar.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                <div>
+                    <strong>Praktik Koding</strong>
+                    <p>Mulai dari JavaScript sebagai course pertama.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <div>
+                    <strong>Sistem & Arsitektur</strong>
+                    <p>Pelajari desain API, modularisasi, dan pola desain.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div>
+                    <strong>Portofolio</strong>
+                    <p>Bangun proyek yang bisa diukur dan ditunjukkan.</p>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <h3>Navigasi Cepat</h3>
+                <a class="nav-link" href="index.html">Dashboard <span>Ringkasan</span></a>
+                <a class="nav-link" href="halaman/dokumentasi.html">Dokumentasi <span>Library</span></a>
+                <a class="nav-link" href="halaman/roadmap.html">Roadmap <span>12 Minggu</span></a>
+            </div>
+
+            <div class="nav-group">
+                <h3>Course Utama</h3>
+                <a class="nav-link" href="course/javascript/index.html">JavaScript Fundamentals <span class="course-tag"><i class="fa-solid fa-crown"></i> #1</span></a>
+                <a class="nav-link" href="course/matematika/index.html">Math for Dev <span>Starter</span></a>
+                <a class="nav-link" href="course/software-engineering/index.html">Engineering Toolkit <span>Core</span></a>
+            </div>
+
+            <div class="nav-group">
+                <h3>Dokumen Inti</h3>
+                <a class="nav-link" href="halaman/matematika.html">Matematika <span>Konsep</span></a>
+                <a class="nav-link" href="halaman/coding.html">Coding <span>Best Practice</span></a>
+                <a class="nav-link" href="halaman/engineering.html">Software Engineering <span>Blueprint</span></a>
+            </div>
+</aside>
+
+        <main>
+            <section class="brand-banner reveal">
+                <div class="brand-banner__logo">
+                    <img src="brand.svg" alt="Logo MagerCode">
+                </div>
+                <div class="brand-banner__text">
+                    <div class="brand-banner__eyebrow">MagerCode</div>
+                    <h2 class="brand-banner__title">Mandiri Course</h2>
+                    <p class="brand-banner__subtitle">Belajar mandiri dengan alur yang jelas dan konsisten.</p>
+                </div>
+            </section>
+
+            <section class="card hero reveal">
+                <div>
+                    <div class="pill"><i class="fa-solid fa-graduation-cap"></i> Dokumentasi + Pembelajaran</div>
+                    <h1>Belajar matematika, coding, dan software engineering dengan <span class="highlight">alur yang jelas</span>.</h1>
+                    <p>
+                        MagerCode adalah ruang belajar mandiri yang terstruktur, responsif, dan profesional.
+                        Fokus pada pemahaman konsep, praktik nyata, serta progres yang terukur.
+                    </p>
+                    <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                        <a class="btn" href="course/javascript/index.html">Mulai Course</a>
+                        <div class="chip"><i class="fa-solid fa-clock"></i> 6-10 jam / minggu</div>
+                    </div>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span>Track Materi</span>
+                        <strong>3 Pilar Utama</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Course Pertama</span>
+                        <strong class="badge">JavaScript Fundamentals</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Mode</span>
+                        <strong>Project Based</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <div class="grid-3">
+                    <div>
+                        <h2>Matematika untuk Problem Solving</h2>
+                        <p>
+                            Fokus pada konsep yang langsung dipakai untuk coding dan rekayasa software. Mulai dari
+                            aljabar, statistik, sampai logika.
+                        </p>
+                        <p><strong>Formula inti:</strong> \( f(x) = ax^2 + bx + c \) dan \( \sigma = \sqrt{\frac{\sum (x_i-\mu)^2}{n}} \)</p>
+                        <a class="pill" href="halaman/matematika.html"><i class="fa-solid fa-arrow-right"></i> Buka dokumentasi</a>
+                    </div>
+                    <div class="course-card">
+                        <h4>Topik Minggu Ini</h4>
+                        <p>Aljabar linear, probabilitas dasar, dan teori graf.</p>
+                        <div class="pill"><i class="fa-solid fa-layer-group"></i> 8 modul</div>
+                    </div>
+                    <div class="course-card">
+                        <h4>Latihan Cepat</h4>
+                        <p>Latihan soal harian dengan pembahasan singkat dan visualisasi.</p>
+                        <div class="pill"><i class="fa-solid fa-pen"></i> 15 soal</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Coding Lab: JavaScript Fundamentals</h2>
+                <p>
+                    Course pertama yang membangun kebiasaan problem solving. Setiap modul
+                    menggabungkan teori, demo, dan mini project.
+                </p>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h4>Module 01</h4>
+                        <p>Variables, data types, dan mindset debugging.</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Module 02</h4>
+                        <p>Function, scope, dan pola reusable code.</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Module 03</h4>
+                        <p>DOM, event, dan interaksi UI sederhana.</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Module 04</h4>
+                        <p>Async, API, dan pola data fetching.</p>
+                    </div>
+                </div>
+                <div class="code-block">
+                    <pre><code class="language-js">const sukses = [
+  { minggu: 1, fokus: "Fundamental" },
+  { minggu: 2, fokus: "Function & Scope" },
+  { minggu: 3, fokus: "DOM & Event" },
+  { minggu: 4, fokus: "Async & API" }
+];
+
+const sesi = sukses.find(({ week }) => week === 2);
+console.log(`Fokus minggu ini: ${sesi.focus}`);
+</code></pre>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a class="btn" href="course/javascript/index.html">Lihat Silabus Lengkap</a>
+                </div>
+            </section>
+
+            <section class="card reveal delay-3">
+                <h2>Software Engineering Blueprint</h2>
+                <p>
+                    Dari desain sistem hingga quality assurance. Fokus pada kebiasaan engineering yang dipakai tim profesional.
+                </p>
+                <div class="grid-3">
+                    <div class="course-card">
+                        <h4>System Thinking</h4>
+                        <p>Arsitektur, diagram, dan boundary context.</p>
+                        <span class="pill"><i class="fa-solid fa-sitemap"></i> Design</span>
+                    </div>
+                    <div class="course-card">
+                        <h4>Engineering Practices</h4>
+                        <p>Testing strategy, CI/CD, dan code review.</p>
+                        <span class="pill"><i class="fa-solid fa-shield"></i> Quality</span>
+                    </div>
+                    <div class="course-card">
+                        <h4>Product Delivery</h4>
+                        <p>Roadmap, estimasi, dan kolaborasi tim.</p>
+                        <span class="pill"><i class="fa-solid fa-flag-checkered"></i> Delivery</span>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a class="btn" href="halaman/engineering.html">Baca Blueprint</a>
+                </div>
+            </section>
+
+            <section class="card reveal">
+                <h2>Roadmap 12 Minggu</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <strong>Minggu 1-3:</strong> Fondasi matematika dan logika algoritma.
+                    </div>
+                    <div class="timeline-item">
+                        <strong>Minggu 4-6:</strong> JavaScript fundamental + mini project.
+                    </div>
+                    <div class="timeline-item">
+                        <strong>Minggu 7-9:</strong> Struktur data, API, dan pengujian.
+                    </div>
+                    <div class="timeline-item">
+                        <strong>Minggu 10-12:</strong> Capstone, dokumentasi, dan presentasi portofolio.
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a class="btn" href="halaman/roadmap.html">Detail Roadmap</a>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Mandiri Course • Build skill with clarity • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

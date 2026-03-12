@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="src/brand.svg" type="image/svg+xml">
+<title>MagerCode - Mandiri Course</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f8fafc;
+    color: #0f172a;
+    text-align: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #e2e8f0;
+    border-top: 5px solid #0ea5a4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+a {
+    color: #0ea5a4;
+    text-decoration: none;
+}
+</style>
+
+<script>
+setTimeout(() => {
+    window.location.href = "src/index.html";
+}, 2000); 
+</script>
+
+</head>
+
+<body>
+
+<div>
+    <h1>MagerCode - Mandiri Course</h1>
+
+    <div class="loader"></div>
+
+    <p>Sabar...</p>
+    <p>Jika tidak berpindah otomatis, buka <a href="src/index.html">src/index.html</a></p>
+</div>
+
+</body>
+</html>

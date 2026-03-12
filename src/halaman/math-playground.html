@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Math Playground untuk belajar dasar matematika dan LaTeX.">
+    <title>Math Playground - MagerCode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Math Playground</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="komunitas.html">Komunitas</a>
+                <a href="math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-keyboard"></i> LaTeX Lab</div>
+                <a class="btn" href="../index.html">Dashboard</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Dokumen Inti</h3>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-calculator"></i></div>
+                <div>
+                    <strong>Latihan Rumus</strong>
+                    <p>Eksplorasi notasi matematika dasar.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                <div>
+                    <strong>Format LaTeX</strong>
+                    <p>Belajar menulis simbol dengan benar.</p>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <h3>Navigasi</h3>
+                <a class="nav-link" href="dokumentasi.html">Dokumentasi <span>Library</span></a>
+                <a class="nav-link" href="matematika.html">Matematika <span>Konsep</span></a>
+                <a class="nav-link" href="coding.html">Coding <span>Best Practice</span></a>
+                <a class="nav-link" href="engineering.html">Software Engineering <span>Blueprint</span></a>
+                <a class="nav-link" href="roadmap.html">Roadmap <span>12 Minggu</span></a>
+            </div>
+</aside>
+
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span class="breadcrumbs-sep">/</span>
+                <span>Halaman</span>
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-current" aria-current="page">Math Playground</span>
+            </nav>
+
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-keyboard"></i> Math Playground</div>
+                    <h1>Math Playground: Dasar Matematika &amp; LaTeX</h1>
+                    <p>Halaman ini menjadi ruang interaktif untuk mempelajari dan mengetik rumus dasar matematika memakai sintaks LaTeX.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-swatchbook"></i> LaTeX Basics</span>
+                    <span class="chip"><i class="fa-solid fa-list-check"></i> 5 contoh rumus</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Kenalan dengan LaTeX</h2>
+                <p>LaTeX adalah sistem penulisan yang membantu menampilkan notasi matematika secara rapi dan konsisten, mulai dari pecahan, akar, hingga simbol Yunani.</p>
+                <div class="formula-grid">
+                    <div class="formula-card">
+                        <h3>Pecahan</h3>
+                        <div class="formula-render">$$\frac{a}{b}$$</div>
+                        <pre class="formula-code"><code>\frac{a}{b}</code></pre>
+                    </div>
+                    <div class="formula-card">
+                        <h3>Akar Kuadrat</h3>
+                        <div class="formula-render">$$\sqrt{x}$$</div>
+                        <pre class="formula-code"><code>\sqrt{x}</code></pre>
+                    </div>
+                    <div class="formula-card">
+                        <h3>Integral</h3>
+                        <div class="formula-render">$$\int_{a}^{b} f(x)\, dx$$</div>
+                        <pre class="formula-code"><code>\int_{a}^{b} f(x)\, dx</code></pre>
+                    </div>
+                    <div class="formula-card">
+                        <h3>Sigma</h3>
+                        <div class="formula-render">$$\sum_{i=1}^{n} i$$</div>
+                        <pre class="formula-code"><code>\sum_{i=1}^{n} i</code></pre>
+                    </div>
+                    <div class="formula-card">
+                        <h3>Huruf Yunani</h3>
+                        <div class="formula-render">$$\alpha + \beta = \gamma$$</div>
+                        <pre class="formula-code"><code>\alpha + \beta = \gamma</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Math Playground • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

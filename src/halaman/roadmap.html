@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roadmap 12 minggu pembelajaran mandiri.">
+    <title>Roadmap 12 Minggu - MagerCode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Roadmap 12 Minggu</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="komunitas.html">Komunitas</a>
+                <a href="math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-calendar-check"></i> Progress Plan</div>
+                <a class="btn" href="../index.html">Dashboard</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Roadmap</h3>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-calendar"></i></div>
+                <div>
+                    <strong>12 Minggu</strong>
+                    <p>Fokus bertahap dari konsep ke project.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div>
+                    <strong>Target</strong>
+                    <p>Bangun portofolio final di minggu 12.</p>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <h3>Navigasi</h3>
+                <a class="nav-link" href="dokumentasi.html">Dokumentasi <span>Library</span></a>
+                <a class="nav-link" href="matematika.html">Matematika <span>Konsep</span></a>
+                <a class="nav-link" href="coding.html">Coding <span>Best Practice</span></a>
+                <a class="nav-link" href="engineering.html">Software Engineering <span>Blueprint</span></a>
+                <a class="nav-link" href="roadmap.html">Roadmap <span>12 Minggu</span></a>
+            </div>
+</aside>
+
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span class="breadcrumbs-sep">/</span>
+                <span>Halaman</span>
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-current" aria-current="page">Roadmap</span>
+            </nav>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-route"></i> Roadmap</div>
+                    <h1>Rencana belajar 12 minggu yang terukur.</h1>
+                    <p>Gunakan rencana ini sebagai panduan, lalu sesuaikan intensitas dengan waktu harian kamu.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-clock"></i> 6-10 jam / minggu</span>
+                    <span class="chip"><i class="fa-solid fa-layer-group"></i> 3 track utama</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Flowchart 12 Minggu</h2>
+                <div class="mermaid">
+flowchart TB
+    start([Mulai]) --> m1
+    m1["M1: Aljabar, logika, dan flowchart dasar"] --> m2
+    m2["M2: JavaScript fundamentals, type, dan operator"] --> m3
+    m3["M3: Function, scope, dan array manipulation"] --> m4
+    m4["M4: DOM, event, dan mini project UI"] --> m5
+    m5["M5: Async, fetch API, dan state sederhana"] --> m6
+    m6["M6: Struktur data dasar (stack, queue, map)"] --> m7
+    m7["M7: Testing dasar dan debug workflow"] --> m8
+    m8["M8: Engineering habit: README, doc, dan versioning"] --> m9
+    m9["M9: System design mini, API contract, dan diagram"] --> m10
+    m10["M10: Capstone project dan validasi kebutuhan"] --> m11
+    m11["M11: Iterasi, testing, dan observability ringan"] --> m12
+    m12(["M12: Demo, dokumentasi final, dan portofolio"])
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Roadmap 12 Minggu • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "base",
+            themeVariables: {
+                fontFamily: "Space Grotesk, sans-serif",
+                primaryColor: "#f6f3ff",
+                primaryTextColor: "#1f1b2e",
+                lineColor: "#5a4b8a",
+                nodeBorder: "#5a4b8a"
+            }
+        });
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dokumentasi inti MagerCode untuk matematika, coding, dan software engineering.">
+    <title>Dokumentasi Inti - MagerCode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Dokumentasi Inti</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="komunitas.html">Komunitas</a>
+                <a href="math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-book"></i> Library</div>
+                <a class="btn" href="../index.html">Dashboard</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Langkah Belajar</h3>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-compass"></i></div>
+                <div>
+                    <strong>Orientasi</strong>
+                    <p>Kenali jalur matematika, coding, dan software engineering.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                <div>
+                    <strong>Dasar Konsep</strong>
+                    <p>Bangun pondasi dengan aljabar, logika, dan algoritma dasar.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                <div>
+                    <strong>Praktik Koding</strong>
+                    <p>Mulai dari JavaScript sebagai course pertama.</p>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <h3>Dokumen Inti</h3>
+                <a class="nav-link" href="dokumentasi.html">Dokumentasi <span>Library</span></a>
+                <a class="nav-link" href="matematika.html">Matematika <span>Konsep</span></a>
+                <a class="nav-link" href="coding.html">Coding <span>Best Practice</span></a>
+                <a class="nav-link" href="engineering.html">Software Engineering <span>Blueprint</span></a>
+                <a class="nav-link" href="roadmap.html">Roadmap <span>12 Minggu</span></a>
+            </div>
+
+            <div class="nav-group">
+                <h3>Course</h3>
+                <a class="nav-link" href="../course/javascript/index.html">JavaScript Fundamentals <span class="course-tag">#1</span></a>
+                <a class="nav-link" href="../course/matematika/index.html">Math for Dev <span>Starter</span></a>
+                <a class="nav-link" href="../course/software-engineering/index.html">Engineering Toolkit <span>Core</span></a>
+            </div>
+</aside>
+
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span class="breadcrumbs-sep">/</span>
+                <span>Halaman</span>
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-current" aria-current="page">Dokumentasi</span>
+            </nav>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-book-open"></i> Dokumentasi Inti</div>
+                    <h1>Library materi yang terstruktur dan bisa dijelajahi.</h1>
+                    <p>Dokumen ini menjadi rujukan utama saat kamu belajar. Gunakan sebagai pegangan, ringkasan, dan checklist.</p>
+                </div>
+                <div class="kpi-grid" style="margin-top: 1.5rem;">
+                    <div class="kpi">
+                        <strong>3 Domain</strong>
+                        <p>Matematika, Coding, Engineering.</p>
+                    </div>
+                    <div class="kpi">
+                        <strong>12 Guide</strong>
+                        <p>Ringkasan, cheat sheet, dan latihan.</p>
+                    </div>
+                    <div class="kpi">
+                        <strong>Realtime Update</strong>
+                        <p>Diupdate tiap minggu belajar.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Dokumen Populer</h2>
+                <div class="resource-list">
+                    <div class="resource-item">
+                        <strong>Matematika untuk Developer</strong>
+                        <p>Ringkasan konsep aljabar, probabilitas, dan graf yang sering muncul di coding.</p>
+                        <a class="pill" href="matematika.html">Buka ringkasan</a>
+                    </div>
+                    <div class="resource-item">
+                        <strong>JavaScript Style Guide</strong>
+                        <p>Standar penulisan kode agar konsisten dan mudah dibaca.</p>
+                        <a class="pill" href="coding.html">Buka panduan</a>
+                    </div>
+                    <div class="resource-item">
+                        <strong>Engineering Checklist</strong>
+                        <p>Checklist sebelum release: testing, monitoring, dan dokumentasi.</p>
+                        <a class="pill" href="engineering.html">Buka blueprint</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Template Catatan Belajar</h2>
+                <p>Gunakan format ini untuk setiap sesi belajar agar konsisten.</p>
+                <div class="code-block">
+                    <pre><code class="language-js">const belajar = {
+  target: "Pahami event loop",
+  ringkasan: "Microtask lebih dulu dari macrotask",
+  latihan: ["Buat simulasi queue"],
+  pertanyaan: "Kapan promise diproses?"
+};
+
+console.log(belajar);
+</code></pre>
+                </div>
+            </section>
+
+            <section class="card reveal delay-3">
+                <h2>Rumus yang Sering Dipakai</h2>
+                <p>Contoh rumus yang relevan untuk analisis kompleksitas dan statistik.</p>
+                <div class="grid-3">
+                    <div class="course-card">
+                        <h4>Big O</h4>
+                        <p>\( T(n) = an^2 + bn + c \Rightarrow O(n^2) \)</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Rata-rata</h4>
+                        <p>\( \mu = \frac{\sum x_i}{n} \)</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Varian</h4>
+                        <p>\( \sigma^2 = \frac{\sum (x_i-\mu)^2}{n} \)</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Dokumentasi Inti • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

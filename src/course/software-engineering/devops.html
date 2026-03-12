@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modul Delivery & DevOps.">
+    <title>Delivery & DevOps - Engineering Toolkit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Delivery & DevOps</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="../../halaman/tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="../../halaman/komunitas.html">Komunitas</a>
+                <a href="../../halaman/math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-rocket"></i> Release</div>
+                <a class="btn" href="index.html">Course Home</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Modul</h3>
+            <a class="nav-link" href="index.html">Overview <span>Silabus</span></a>
+            <a class="nav-link" href="system-design.html">System Design <span>Architecture</span></a>
+            <a class="nav-link" href="testing.html">Testing Strategy <span>Quality</span></a>
+            <a class="nav-link" href="devops.html">Delivery & DevOps <span>Release</span></a>
+</aside>
+
+        <main>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-3"></i> Modul Delivery</div>
+                    <h1>CI/CD dan Observability.</h1>
+                    <p>Menyiapkan pipeline, monitoring, dan respons insiden.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-clock"></i> 3 sesi</span>
+                    <span class="chip"><i class="fa-solid fa-clipboard"></i> 3 latihan</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Materi</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> Pipeline CI/CD dasar.</div>
+                    <div><i class="fa-solid fa-check"></i> Deployment strategy (blue-green).</div>
+                    <div><i class="fa-solid fa-check"></i> Monitoring, logging, dan alert.</div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Checklist Release</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> Semua env variable terdokumentasi.</div>
+                    <div><i class="fa-solid fa-check"></i> Threshold alert ditentukan.</div>
+                    <div><i class="fa-solid fa-check"></i> Prosedur rollback disiapkan.</div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Delivery & DevOps • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

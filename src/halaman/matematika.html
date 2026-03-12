@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dokumentasi matematika untuk developer.">
+    <title>Matematika - MagerCode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Dokumentasi Matematika</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="komunitas.html">Komunitas</a>
+                <a href="math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-square-root-variable"></i> Math Notes</div>
+                <a class="btn" href="../index.html">Dashboard</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Dokumen Inti</h3>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-calculator"></i></div>
+                <div>
+                    <strong>Fokus Konsep</strong>
+                    <p>Konsep yang sering muncul pada coding challenge.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                    <strong>Latihan</strong>
+                    <p>Soal numerik, pembahasan, dan latihan mandiri.</p>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <h3>Navigasi</h3>
+                <a class="nav-link" href="dokumentasi.html">Dokumentasi <span>Library</span></a>
+                <a class="nav-link" href="matematika.html">Matematika <span>Konsep</span></a>
+                <a class="nav-link" href="coding.html">Coding <span>Best Practice</span></a>
+                <a class="nav-link" href="engineering.html">Software Engineering <span>Blueprint</span></a>
+                <a class="nav-link" href="roadmap.html">Roadmap <span>12 Minggu</span></a>
+            </div>
+</aside>
+
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span class="breadcrumbs-sep">/</span>
+                <span>Halaman</span>
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-current" aria-current="page">Matematika</span>
+            </nav>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-brain"></i> Math for Dev</div>
+                    <h1>Ringkasan matematika yang relevan untuk developer.</h1>
+                    <p>Dokumen ini fokus pada konsep yang sering muncul saat menyelesaikan problem solving.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-stopwatch"></i> 45-60 menit / sesi</span>
+                    <span class="chip"><i class="fa-solid fa-layer-group"></i> 6 topik utama</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Topik Inti</h2>
+                <div class="grid-3">
+                    <div class="course-card">
+                        <h4>Aljabar Linear</h4>
+                        <p>Vektor, matriks, dan operasi dasar untuk data.</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Probabilitas</h4>
+                        <p>Distribusi, peluang gabungan, dan ekspektasi.</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Graf & Tree</h4>
+                        <p>Representasi node-edge dan traversal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Formula Penting</h2>
+                <div class="grid-3">
+                    <div class="course-card">
+                        <h4>Dot Product</h4>
+                        <p>\( \vec{a} \cdot \vec{b} = \sum a_i b_i \)</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Kombinasi</h4>
+                        <p>\( C(n, r) = \frac{n!}{r!(n-r)!} \)</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>BFS Time</h4>
+                        <p>\( O(V + E) \)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-3">
+                <h2>Checklist Latihan</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> Latihan operasi matriks 3x3.</div>
+                    <div><i class="fa-solid fa-check"></i> Hitung probabilitas event independen.</div>
+                    <div><i class="fa-solid fa-check"></i> Implementasi BFS dan DFS sederhana.</div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Dokumentasi Matematika • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

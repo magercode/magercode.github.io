@@ -1,0 +1,350 @@
+.brand-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    background:
+        linear-gradient(135deg, rgba(14, 165, 164, 0.12), rgba(99, 102, 241, 0.12)),
+        rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.brand-banner__logo {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+    animation: floatBadge 4s ease-in-out infinite;
+}
+
+.brand-banner__logo img {
+    width: 42px;
+    height: 42px;
+}
+
+.brand-banner__eyebrow {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    color: var(--muted);
+}
+
+.brand-banner__title {
+    margin: 0.25rem 0 0.4rem;
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    color: var(--ink);
+    position: relative;
+    display: inline-block;
+    animation: titleGlow 3.5s ease-in-out infinite;
+}
+
+.brand-banner__subtitle {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.98rem;
+}
+
+.playground {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.playground-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.editor-panel,
+.preview-panel {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 1.2rem;
+}
+
+.editor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.editor-sub {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+}
+
+.editor {
+    min-height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.CodeMirror {
+    height: 100%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9rem;
+}
+
+.preview-frame {
+    width: 100%;
+    min-height: 360px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    background: #fff;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+.hero .highlight {
+    color: var(--accent);
+}
+
+.hero-metrics {
+    display: grid;
+    gap: 1rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.course-card {
+    padding: 1.2rem;
+    border-radius: 16px;
+    background: rgba(15, 23, 42, 0.04);
+}
+
+.course-card h4 {
+    margin-bottom: 0.4rem;
+}
+
+.timeline {
+    display: grid;
+    gap: 1rem;
+}
+
+.timeline-item {
+    padding: 1rem 1.2rem;
+    border-radius: 16px;
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.18);
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.page-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.kpi {
+    padding: 1rem 1.2rem;
+    border-radius: 16px;
+    background: rgba(14, 165, 164, 0.08);
+    border: 1px solid rgba(14, 165, 164, 0.18);
+}
+
+.checklist {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.checklist div {
+    display: flex;
+    gap: 0.6rem;
+    align-items: start;
+    background: rgba(15, 23, 42, 0.03);
+    padding: 0.7rem 0.9rem;
+    border-radius: 12px;
+}
+
+.resource-list {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.resource-item {
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.bento-card {
+    background: var(--card);
+    border-radius: 18px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+}
+
+.bento-span-12 {
+    grid-column: span 12;
+}
+
+.bento-span-7 {
+    grid-column: span 7;
+}
+
+.bento-span-6 {
+    grid-column: span 6;
+}
+
+.bento-span-5 {
+    grid-column: span 5;
+}
+
+.bento-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-bottom: 0.9rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.latex-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.latex-hint {
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.latex-input {
+    width: 100%;
+    min-height: 220px;
+    padding: 0.8rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    background: rgba(15, 23, 42, 0.04);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.92rem;
+    color: var(--ink);
+    resize: vertical;
+}
+
+.latex-preview {
+    min-height: 220px;
+    border-radius: 12px;
+    border: 1px dashed rgba(14, 165, 164, 0.35);
+    background: rgba(14, 165, 164, 0.06);
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    color: var(--ink);
+}
+
+.latex-error {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: #b42318;
+}
+
+.latex-cheats {
+    display: grid;
+    gap: 0.6rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.latex-cheats code {
+    font-family: "JetBrains Mono", monospace;
+    color: var(--ink);
+    background: rgba(15, 23, 42, 0.06);
+    padding: 0.1rem 0.35rem;
+    border-radius: 6px;
+}
+
+.video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0f172a;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0 1rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .bento-span-7,
+    .bento-span-6,
+    .bento-span-5 {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 640px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-card {
+        padding: 1rem;
+    }
+}

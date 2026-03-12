@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini project JavaScript Fundamentals.">
+    <title>Mini Project - JavaScript Fundamentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Mini Project</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="../../halaman/tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="../../halaman/komunitas.html">Komunitas</a>
+                <a href="../../halaman/math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-rocket"></i> Capstone</div>
+                <a class="btn" href="index.html">Course Home</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Modul</h3>
+            <a class="nav-link" href="index.html">Overview <span>Silabus</span></a>
+            <a class="nav-link" href="module-01.html">Module 01 <span>Fundamental</span></a>
+            <a class="nav-link" href="module-02.html">Module 02 <span>Function</span></a>
+            <a class="nav-link" href="module-03.html">Module 03 <span>DOM & Event</span></a>
+            <a class="nav-link" href="module-04.html">Module 04 <span>Async</span></a>
+            <a class="nav-link" href="project.html">Mini Project <span>Capstone</span></a>
+</aside>
+
+        <main>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-flag-checkered"></i> Mini Project</div>
+                    <h1>Build: Habit Tracker Dashboard</h1>
+                    <p>Project akhir untuk menggabungkan DOM, event, dan async data.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-clock"></i> 1 minggu</span>
+                    <span class="chip"><i class="fa-solid fa-layer-group"></i> 3 fitur utama</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Fitur Wajib</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> CRUD habit dengan local state.</div>
+                    <div><i class="fa-solid fa-check"></i> Filter berdasarkan status dan tanggal.</div>
+                    <div><i class="fa-solid fa-check"></i> Integrasi API quotes untuk motivasi.</div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Deliverables</h2>
+                <div class="resource-list">
+                    <div class="resource-item">
+                        <strong>UI Dashboard</strong>
+                        <p>Layout bersih dengan daftar habits, ringkasan, dan statistik.</p>
+                    </div>
+                    <div class="resource-item">
+                        <strong>Dokumentasi</strong>
+                        <p>README berisi cara menjalankan, fitur, dan screenshot.</p>
+                    </div>
+                    <div class="resource-item">
+                        <strong>Review</strong>
+                        <p>Lakukan self-review menggunakan checklist coding guide.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-3">
+                <h2>Contoh Struktur Data</h2>
+                <div class="code-block">
+                    <pre><code class="language-js">const habits = [
+  { id: 1, title: "Belajar JS", done: false, streak: 2 },
+  { id: 2, title: "Latihan algoritma", done: true, streak: 5 }
+];
+</code></pre>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Mini Project • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

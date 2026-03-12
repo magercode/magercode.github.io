@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modul Aljabar Linear.">
+    <title>Aljabar Linear - Math for Dev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Aljabar Linear</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="../../halaman/tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="../../halaman/komunitas.html">Komunitas</a>
+                <a href="../../halaman/math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-vector-square"></i> Linear Algebra</div>
+                <a class="btn" href="index.html">Course Home</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Modul</h3>
+            <a class="nav-link" href="index.html">Overview <span>Silabus</span></a>
+            <a class="nav-link" href="aljabar.html">Aljabar Linear <span>Core</span></a>
+            <a class="nav-link" href="statistika.html">Statistika <span>Data</span></a>
+            <a class="nav-link" href="graf.html">Graf & Tree <span>Struktur</span></a>
+</aside>
+
+        <main>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-1"></i> Modul Aljabar</div>
+                    <h1>Vektor dan Matriks</h1>
+                    <p>Materi dasar untuk memahami transformasi data dan operasi matriks.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-clock"></i> 3 sesi</span>
+                    <span class="chip"><i class="fa-solid fa-clipboard"></i> 4 latihan</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Materi</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> Operasi vektor (penjumlahan, skalar).</div>
+                    <div><i class="fa-solid fa-check"></i> Matriks dan perkalian matriks.</div>
+                    <div><i class="fa-solid fa-check"></i> Transformasi linear sederhana.</div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Formula</h2>
+                <div class="grid-3">
+                    <div class="course-card">
+                        <h4>Dot Product</h4>
+                        <p>\( \vec{a} \cdot \vec{b} = \sum a_i b_i \)</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Norm</h4>
+                        <p>\( ||\vec{a}|| = \sqrt{\sum a_i^2} \)</p>
+                    </div>
+                    <div class="course-card">
+                        <h4>Matrix</h4>
+                        <p>\( A \times B = C \)</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Aljabar Linear • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

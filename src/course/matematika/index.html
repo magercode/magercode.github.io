@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course Math for Dev.">
+    <title>Math for Dev - MagerCode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="../../brand.svg" alt="Logo MagerCode">
+                </div>
+                <div>
+                    <div>MagerCode</div>
+                    <small style="color: var(--muted); font-weight: 500;">Math for Dev</small>
+                </div>
+            </div>
+            <nav class="top-nav" aria-label="Navigasi utama">
+                <a href="../../halaman/tentang.html">Tentang</a>
+                <a href="mailto:contact@rayhex.biz.id">Kontak</a>
+                <a href="https://github.com/magercode" target="_blank" rel="noopener">GitHub</a>
+                <a href="../../halaman/komunitas.html">Komunitas</a>
+                <a href="../../halaman/math-playground.html">Playground</a>
+                <form class="nav-search" role="search">
+                    <input class="nav-search-input" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+                </form>
+            </nav>
+            <div class="top-actions">
+                <div class="chip"><i class="fa-solid fa-square-root-variable"></i> Starter</div>
+                <a class="btn" href="../../index.html">Dashboard</a>
+                <button class="menu-toggle hamburger hamburger--spin" id="toggleSidebar" type="button" aria-label="Menu Sidebar" aria-expanded="false">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-label">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="page">
+        <aside class="sidebar reveal" id="sidebar">
+<h3>Modul</h3>
+            <a class="nav-link" href="index.html">Overview <span>Silabus</span></a>
+            <a class="nav-link" href="aljabar.html">Aljabar Linear <span>Core</span></a>
+            <a class="nav-link" href="statistika.html">Statistika <span>Data</span></a>
+            <a class="nav-link" href="graf.html">Graf & Tree <span>Struktur</span></a>
+
+            <div class="nav-group">
+                <h3>Dokumen Terkait</h3>
+                <a class="nav-link" href="../../halaman/matematika.html">Dokumentasi Math <span>Ringkas</span></a>
+                <a class="nav-link" href="../../halaman/roadmap.html">Roadmap <span>12 Minggu</span></a>
+            </div>
+</aside>
+
+        <main>
+            <section class="card reveal">
+                <div class="page-header">
+                    <div class="pill"><i class="fa-solid fa-square-root-variable"></i> Math for Dev</div>
+                    <h1>Matematika praktis untuk problem solving.</h1>
+                    <p>Course ini membantu memahami konsep yang sering muncul pada coding challenge.</p>
+                </div>
+                <div class="page-meta">
+                    <span class="chip"><i class="fa-solid fa-clock"></i> 3 minggu</span>
+                    <span class="chip"><i class="fa-solid fa-layer-group"></i> 3 modul</span>
+                </div>
+            </section>
+
+            <section class="card reveal delay-1">
+                <h2>Learning Outcomes</h2>
+                <div class="checklist">
+                    <div><i class="fa-solid fa-check"></i> Menghitung vektor, matriks, dan operasi dasar.</div>
+                    <div><i class="fa-solid fa-check"></i> Menggunakan probabilitas untuk analisis data sederhana.</div>
+                    <div><i class="fa-solid fa-check"></i> Memodelkan masalah dengan graf dan tree.</div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Math Playground: LaTeX IDE &amp; Compiler</h2>
+                <p>Gunakan editor ini untuk menulis rumus LaTeX lalu lihat hasil render secara langsung di panel compiler.</p>
+                <div class="bento-grid">
+                    <div class="bento-card bento-span-7 latex-editor">
+                        <div class="bento-header">
+                            <strong>LaTeX IDE</strong>
+                            <span class="preview-status">Editor</span>
+                        </div>
+                        <div class="latex-toolbar">
+                            <button class="btn-small" id="latexRender" type="button">Render</button>
+                            <button class="btn-small btn-ghost" id="latexReset" type="button">Reset</button>
+                            <span class="latex-hint">Tips: pakai \frac{a}{b}, \sqrt{x}, \sum, \int.</span>
+                        </div>
+                        <textarea
+                            id="latexInput"
+                            class="latex-input"
+                            data-default="\int_{a}^{b} f(x)\, dx"
+                            spellcheck="false"
+                            aria-label="Editor LaTeX">\int_{a}^{b} f(x)\, dx</textarea>
+                    </div>
+                    <div class="bento-card bento-span-5 latex-compiler">
+                        <div class="bento-header">
+                            <strong>Compiler Preview</strong>
+                            <span class="preview-status">Output</span>
+                        </div>
+                        <div id="latexPreview" class="latex-preview" aria-live="polite"></div>
+                        <div id="latexError" class="latex-error" role="status"></div>
+                    </div>
+                    <div class="bento-card bento-span-12 latex-cheatsheet">
+                        <div class="bento-header">
+                            <strong>Mini Cheatsheet</strong>
+                            <span class="preview-status">Referensi Cepat</span>
+                        </div>
+                        <div class="latex-cheats">
+                            <div><code>\frac{a}{b}</code> pecahan</div>
+                            <div><code>\sqrt{x}</code> akar</div>
+                            <div><code>\sum_{i=1}^{n} i</code> sigma</div>
+                            <div><code>\int_{a}^{b} f(x)\, dx</code> integral</div>
+                            <div><code>\alpha, \beta, \gamma</code> huruf Yunani</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-3">
+                <h2>Video Pembelajaran Matematika (Bento Grid)</h2>
+                <p>Pilih video sesuai topik dan tonton langsung tanpa meninggalkan halaman.</p>
+                <div class="bento-grid">
+                    <div class="bento-card bento-span-6 video-card">
+                        <div class="bento-header">
+                            <strong>Video 01</strong>
+                            <span class="preview-status">YouTube</span>
+                        </div>
+                        <div class="video-frame">
+                            <iframe
+                                src="https://www.youtube.com/embed/aMVQq1kshao"
+                                title="Pembelajaran Matematika 01"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="bento-card bento-span-6 video-card">
+                        <div class="bento-header">
+                            <strong>Video 02</strong>
+                            <span class="preview-status">YouTube</span>
+                        </div>
+                        <div class="video-frame">
+                            <iframe
+                                src="https://www.youtube.com/embed/xoHt137BXJE"
+                                title="Pembelajaran Matematika 02"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="bento-card bento-span-6 video-card">
+                        <div class="bento-header">
+                            <strong>Video 03</strong>
+                            <span class="preview-status">YouTube</span>
+                        </div>
+                        <div class="video-frame">
+                            <iframe
+                                src="https://www.youtube.com/embed/mza6QYH3oEw"
+                                title="Pembelajaran Matematika 03"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="bento-card bento-span-6 video-card">
+                        <div class="bento-header">
+                            <strong>Video 04</strong>
+                            <span class="preview-status">YouTube</span>
+                        </div>
+                        <div class="video-frame">
+                            <iframe
+                                src="https://www.youtube.com/embed/eW7LZDdXhLo"
+                                title="Pembelajaran Matematika 04"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card reveal delay-2">
+                <h2>Silabus Modul</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h4>Aljabar Linear</h4>
+                        <p>Vektor, matriks, dan transformasi.</p>
+                        <a class="pill" href="aljabar.html">Buka modul</a>
+                    </div>
+                    <div class="course-card">
+                        <h4>Statistika</h4>
+                        <p>Mean, median, deviasi, dan distribusi.</p>
+                        <a class="pill" href="statistika.html">Buka modul</a>
+                    </div>
+                    <div class="course-card">
+                        <h4>Graf & Tree</h4>
+                        <p>Representasi node-edge dan traversal.</p>
+                        <a class="pill" href="graf.html">Buka modul</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                MagerCode • Math for Dev • <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        const latexInput = document.getElementById("latexInput");
+        const latexPreview = document.getElementById("latexPreview");
+        const latexError = document.getElementById("latexError");
+        const latexRender = document.getElementById("latexRender");
+        const latexReset = document.getElementById("latexReset");
+
+        const renderLatex = () => {
+            if (!latexInput || !latexPreview || !window.katex) return;
+            const value = latexInput.value.trim() || "\\;"; 
+            latexError.textContent = "";
+            try {
+                window.katex.render(value, latexPreview, {
+                    throwOnError: false,
+                    displayMode: true
+                });
+            } catch (err) {
+                latexError.textContent = err.message || "Gagal merender LaTeX.";
+            }
+        };
+
+        if (latexInput) {
+            latexInput.addEventListener("input", renderLatex);
+        }
+
+        if (latexRender) {
+            latexRender.addEventListener("click", renderLatex);
+        }
+
+        if (latexReset && latexInput) {
+            latexReset.addEventListener("click", () => {
+                latexInput.value = latexInput.dataset.default || "";
+                renderLatex();
+            });
+        }
+
+        renderLatex();
+    </script>
+</body>
+</html>
